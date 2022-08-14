@@ -83,7 +83,7 @@ if __name__ == "__main__":
     
 import logging
 from telegram import Update
-from telegram.ext import ApplicationBuilder, CallbackContext, CommandHandler`
+from telegram.ext import ApplicationBuilder, CallbackContext, CommandHandler
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
