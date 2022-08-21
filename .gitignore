@@ -1,1 +1,8 @@
 __pycache__/
+git init
+git add .
+git commit -m "first commit"
+
+heroku git:remote -a triviamircs
+
+git push heroku master
