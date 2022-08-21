@@ -225,3 +225,19 @@ class Quiz:
         elif update.effective_message:
             update.effective_message.reply_text(
                 "No quiz was there to stop :p")
+       
+       # Start the Bot
+    updater.start_webhook(
+        listen="0.0.0.0",
+        port=int(PORT),
+        url_path=TOKEN,
+        webhook_url='https://triviamircs.herokuapp.com/' + TOKEN
+    )
+
+    # Run the bot until you press Ctrl-C or the process receives SIGINT,
+    # SIGTERM or SIGABRT. This should be used most of the time, since
+    # start_polling() is non-blocking and will stop the bot gracefully.
+    updater.idle()
+
+if __name__ == '__main__':
+    main()
